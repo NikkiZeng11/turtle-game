@@ -1,0 +1,124 @@
+/* 页面整体样式 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+}
+
+/* 输入区域样式 */
+.input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.input-area label {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.input-area input,
+.input-area select {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.input-area button:hover {
+  background-color: #1976d2;
+}
+
+/* 九宫格容器样式 */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* 乌龟方块样式 */
+.game-board div {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.game-board div.red {
+  background-color: #ff4d4d;
+}
+
+.game-board div.green {
+  background-color: #4caf50;
+}
+
+.game-board div.blue {
+  background-color: #2196f3;
+}
+
+.game-board div.yellow {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.game-board div.orange {
+  background-color: #ff9800;
+}
+
+.game-board div.pink {
+  background-color: #e91e63;
+}
+
+.game-board div.purple {
+  background-color: #9c27b0;
+}
+
+.game-board div.cyan {
+  background-color: #00bcd4;
+}
+
+.game-board div.brown {
+  background-color: #795548;
+}
+
+/* 状态显示区域样式 */
+.status {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.status p {
+  margin: 5px 0;
+}
